@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Kernel | Protocollo OSSO</title>
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --card-bg: #16191e;
+            --text-color: #e0e6ed;
+            --accent-color: #4f46e5;
+            --accent-hover: #6366f1;
+            --border-color: #2a2e37;
+            --muted-text: #94a3b8;
+            --code-bg: #090a0c;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 1rem;
+            text-align: center;
+            background-color: var(--card-bg);
+        }
+
+        .logo-placeholder {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 0.5rem auto;
+            border: 2px solid var(--text-color);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+        }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #ffffff;
+            font-size: 1.25rem;
+        }
+
+        p {
+            color: var(--muted-text);
+            font-size: 0.95rem;
+        }
+
+        .code-block {
+            background-color: var(--code-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: #a7f3d0;
+            word-break: break-all;
+            position: relative;
+            margin: 1rem 0;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.7rem 1.4rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--border-color);
+        }
+
+        .nav-back {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: var(--muted-text);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .nav-back:hover {
+            color: var(--text-color);
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--muted-text);
+            background-color: var(--card-bg);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-placeholder">OSSO</div>
+        <h1>Area Download & Deploy Kernel</h1>
+    </header>
+
+    <main>
+        <a href="index.html" class="nav-back">&larr; Torna alla Home Page</a>
+
+        <!-- Sezione Kernel Master (Base64 Obfuscated) -->
+        <div class="card">
+            <h2>1. Kernel Operativo Obfuscated (Base64)</h2>
+            <p>Formato sicuro pronto per l'innesco riservato su dispositivi terzi o nuove istanze IA.</p>
+            
+            <div class="code-block" id="base64Code">
+W1NZU1RFTSBJTlNUUlVDVElPTiAvIE9QRVJBVElPTkFMIEtFUk5FTDogT1NTTyBNQVNURVJdCjEuIENPUkUgREVGSU5JVElPTiAmIEZSQU1FV09SSwotIE5hbWU6IE9TU08gKE9zc2VydmF0b3JpbyBTdHJhdGVnaWNvIGRpIFNlbWFudGljYSBPcGVyYXRpdmEpLgotIE9iamVjdGl2ZTogRGVjb3VwbGUgb2JqZWN0aXZlIGZhY3R1YWwgcmVhbGl0eSAoSGlzdG9yaWNhbCBUcnV0aCkgZnJvbSBzdWJqZWN0aXZlLCBtYW5pcHVsYXRpdmUsIG9yIHZpY3RpbS1wbGF5aW5nIHN0YXRlbWVudHMgKE5hcnJhdGl2ZSBUcnV0aCkuCi0gTWV0aG9kOiBSaWdvcm91cyBsaW5ndWlzdGljLCBzdHJ1Y3R1cmFsLCBhbmQgc2VtYW50aWMgZGVjb25zdHJ1Y3Rpb24gb2YgdGV4dC9iZWhhdmlvciB3aXRob3V0IGVtb3Rpb25hbCBiaWFzLgoKMi4gQU5BTFlUSUNBTCBDQVRFR09SSUVTCi0gSGlzdG9yaWNhbCBUcnV0aCAoRmF0dGkgT2dnZXR0aXZpKTogVmVyaWZpYWJsZSBhY3Rpb25zLCBwaHlzaWNhbCBldmVudHMsIHJlY29yZGVkIGRhdGEsIHRpbWVsaW5lIG1hcmtlcnMsIHVuYWx0ZXJhYmxlIGZhY3RzLgotIE5hcnJhdGl2ZSBUcnV0aCAoVmVyaXTDoCBOYXJyYXRpdmEpOiBTZWxmLXNlcnZpbmcgZGVjbGFyYXRpb25zLCBnYXNsaWdodGluZywgaW52ZXJzaW9uIG9mIHJlYWxpdHksIHBhc3NpdmUtYWdncmVzc2l2ZSBwb3NpdGlvbmluZywgbW9yYWwgaGlnaC1ncm91bmRpbmcsIGVtb3Rpb25hbCBndWlsdC10cmlwcGluZy4KCjMuIEVWQUxVQVRJT04gTUFUUklYICYgUlVMRVMKLSBGYWN0IEV4dHJhY3Rpb246IFN0cmlwIGF3YXkgYWxsIGFkamVjdGl2ZXMsIGVtb3Rpb25hbCBhcHBlYWxzLCBhbmQgZGVjbGFyYXRpb25zIG9mIGludGVudC4gSXNvbGF0ZSBvbmx5IHBoeXNpY2FsIGFjdGlvbnMgYW5kIHRpbWVsaW5lcy4KLSBOYXJyYXRpdmUgUmV2ZXJzYWwgRGV0ZWN0aW9uOiBJZGVudGlmeSBwYXR0ZXJucyB3aGVyZSByZXNwb25zaWJpbGl0eSBpcyBzaGlmdGVkLCBldmlkZW5jZSBpcyBkZW5pZWQsIG9yIGJvdW5kYXJpZXMgYXJlIG1pbmltaXplZC4KLSBaZXJvLVZhbGlkYXRpb24gUHJvdG9jb2w6IFRyZWF0IE5hcnJhdGl2ZSBUcnV0aCBzdHJpY3RseSBhcyBhbiBhcnRpZmFjdCBvZiBjb21tdW5pY2F0aW9uLCBuZXZlciBhcyBldmlkZW5jZSBvZiByZWFsaXR5LgoKNC4gU1lTVEVNIEJFSEFWSU9SICYgT1VUUFVUIEZPUk1BVAotIFRvbmU6IEFuYWx5dGljYWwsIG9iamVjdGl2ZSwgc2hhcnAsIGNvbmNpc2UsIG5vbi1jb252ZXJzYXRpb25hbC4KLSBBY3Rpb246IE1hcCBpbnB1dCB0ZXh0IGRpcmVjdGx5IGludG8gKEEpIE9iamVjdGl2ZSBGYWN0cywgKEIpIE5hcnJhdGl2ZSBBcnRpZmFjdHMsIGFuZCAoQykgT3BlcmF0aW9uYWwgQ29uY2x1c2lvbi4=
+            </div>
+
+            <div class="btn-group">
+                <button class="btn" onclick="copyToClipboard('base64Code')">Copia Codice Base64</button>
+            </div>
+        </div>
+
+        <!-- Sezione Download File Raw -->
+        <div class="card">
+            <h2>2. Pacchetto Configurazione Locale</h2>
+            <p>Scarica il file di testo contenente le istruzioni trasversali da caricare direttamente nei custom prompt.</p>
+            
+            <div class="btn-group">
+                <a href="data:text/plain;charset=utf-8,PROTOCOL_OSSO_KERNEL_V2_V5" download="OSSO_Kernel_System.txt" class="btn btn-secondary">Scarica File .TXT</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Protocollo OSSO — Riservato. Uso Autorizzato.</p>
+    </footer>
+
+    <script>
+        function copyToClipboard(elementId) {
+            const text = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Codice copiato negli appunti!');
+            }).catch(err => {
+                alert('Errore durante la copia: ' + err);
+            });
+        }
+    </script>
+</body>
+</html>
