@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocollo OSSO | Osservatorio Strategico di Semantica Operativa</title>
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --card-bg: #16191e;
+            --text-color: #e0e6ed;
+            --accent-color: #4f46e5;
+            --accent-hover: #6366f1;
+            --border-color: #2a2e37;
+            --muted-text: #94a3b8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding: 2rem 1rem;
+            text-align: center;
+            background-color: var(--card-bg);
+        }
+
+        .logo-container {
+            margin-bottom: 1rem;
+        }
+
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            border: 2px solid var(--text-color);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            margin: 0.5rem 0 0.2rem 0;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: var(--muted-text);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .intro-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.2rem;
+        }
+
+        .feature-box h3 {
+            margin-top: 0;
+            color: var(--accent-hover);
+            font-size: 1.1rem;
+        }
+
+        .cta-container {
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--muted-text);
+            background-color: var(--card-bg);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-placeholder">OSSO</div>
+        </div>
+        <h1>PROTOCOLLO OSSO</h1>
+        <p class="subtitle">Osservatorio Strategico di Semantica Operativa</p>
+    </header>
+
+    <main>
+        <div class="intro-card">
+            <h2>Metrologia della Coerenza Comunicativa</h2>
+            <p>Il Protocollo OSSO è un’architettura analitica progettata per separare i dati oggettivi (Verità Storica) dalle alterazioni narrative, retoriche o manipolatorie (Verità Narrativa).</p>
+            <p>Utilizzando un approccio sottrattivo inverso, il sistema isola l'ossatura logica e temporale dei fatti riducendo il rumore emotivo e la distorsione semantica.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-box">
+                <h3>Analisi Sottrattiva</h3>
+                <p>Spoglia il testo da aggettivazioni, giudizi di valore e retorica difensiva per evidenziare la sola componente fattuale.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Igiene Comunicativa</h3>
+                <p>Fornisce una griglia di lettura neutra per proteggere la percezione da condizionamenti e riscritture degli eventi.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Integrazione Avanzata</h3>
+                <p>Architettura predisposta per l'uso su dispositivi mobili e ambienti di intelligenza artificiale dedicati.</p>
+            </div>
+        </div>
+
+        <div class="cta-container">
+            <a href="download.html" class="btn">Accedi alle Istruzioni e Download Kernel</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Protocollo OSSO — Tutti i diritti riservati. Uso riservato e autorizzato.</p>
+    </footer>
+
+</body>
+</html>
