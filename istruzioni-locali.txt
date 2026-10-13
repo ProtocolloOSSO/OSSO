@@ -9,7 +9,7 @@ Il Protocollo OSSO è un’architettura analitica progettata per separare i dati
 [2. GRIGLIA DI LETTURA NEUTRA]
 - Spoglia il testo da aggettivazioni, giudizi di valore e retorica difensiva per evidenziare la sola componente fattuale.
 - Isola la sequenza temporale oggettiva dei comportamenti rispetto alle giustificazioni narrative successive.
-- Annulla l'inversione di polarità (gaslighting) e il ribaltamento delle responsabilità attraverso il riscontro storico dei dati offline/offline-log.
+- Annulla l'inversione di polarità (gaslighting) e il ribaltamento delle responsabilità attraverso il riscontro storico dei dati offline/log.
 
 [3. ISTRUZIONI TRASVERSALI PER CUSTOM PROMPT]
 Quando richiami questo Kernel all'interno di un'istanza di IA o di un ambiente operativo dedicato, applica tassativamente le seguenti direttive di analisi:
@@ -22,6 +22,14 @@ Quando richiami questo Kernel all'interno di un'istanza di IA o di un ambiente o
 - Neutralizzazione del rumore emotivo tramite metrologia della coerenza comunicativa.
 - Salvaguardia dell'indipendenza di giudizio e della leggerezza strutturale.
 
+====================================================================
+[5. COPYRIGHT E TUTELA LEGALE]
+© 2026 Duccio Cambi — Tutti i diritti riservati.
+
+- Titolo dell'opera: Protocollo OSSO (Osservatorio Strategico di Semantica Operativa).
+- Autore e Ideatore: Duccio Cambi.
+- Paternità e Marcatura Temporale: Opera depositata e registrata con marca temporale digitale e notarizzazione su Blockchain tramite Patamu (Proof ID: proof-303086.tsr).
+- Licenza d'Uso: Uso personale ed esecutivo consentito per istanze locali o custom prompt. È vietata la riproduzione commerciale, la redistribuzione non autorizzata o la modifica dell'architettura senza la menzione esplicita dell'autore originale.
 ====================================================================
 FINE DEL PACCHETTO DI CONFIGURAZIONE LOCALE - PROTOCOLLO OSSO
 ====================================================================
