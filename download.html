@@ -106,6 +106,55 @@
             </div></div>
         <button class="btn" onclick="copyCode()">Copia Codice Base64</button>
     </div>
+    <!-- Sezione Action Kernel -->
+<div class="kernel-actions" style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
+  
+  <!-- Tastipreesistenti -->
+  <button id="btn-copy" onclick="copyBase64()" class="btn btn-secondary">
+    📋 Copia Codice Base64
+  </button>
+
+  <!-- NUOVO TASTO: PROVALO SUBITO -->
+  <button id="btn-try-now" onclick="tryKernelNow()" class="btn btn-primary" style="background-color: #2563eb; color: white; font-weight: bold;">
+    🚀 Provalo Subito
+  </button>
+
+</div>
+
+<!-- Modal / Toast di Istruzione Rapida -->
+<div id="try-modal" style="display:none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); z-index: 1000; max-width: 450px; text-align: center;">
+  <h3 style="margin-top:0; color: #1e293b;">⚡ Kernel Copiato negli Appunti!</h3>
+  <p style="color: #475569; font-size: 0.95rem; line-height: 1.5;">
+    Per attivarlo subito:
+  </p>
+  <ol style="text-align: left; color: #334155; font-size: 0.9rem; padding-left: 20px;">
+    <li>Apri una nuova scheda nel browser.</li>
+    <li>Incolla il codice direttamente nella **barra degli indirizzi**.</li>
+    <li>Premi **Invio** per avviare l'analisi semantica automatica.</li>
+  </ol>
+  <button onclick="closeModal()" class="btn" style="margin-top: 15px; background: #e2e8f0; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer;">
+    Ho capito, chiudi
+  </button>
+</div>
+
+<script>
+function tryKernelNow() {
+  // 1. Recupera la stringa Base64
+  const base64Code = "IL_TUO_CODICE_BASE64_HERE"; 
+
+  // 2. Copia negli appunti
+  navigator.clipboard.writeText(base64Code).then(() => {
+    // 3. Mostra le istruzioni a schermo
+    document.getElementById('try-modal').style.display = 'block';
+  }).catch(err => {
+    alert("Errore nella copia automatica. Copia manualmente il codice.");
+  });
+}
+
+function closeModal() {
+  document.getElementById('try-modal').style.display = 'none';
+}
+</script>
 
     <!-- Sezione 2: Pacchetto Configurazione Locale -->
     <div class="card">
