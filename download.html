@@ -98,19 +98,20 @@
 
     <a href="index.html" class="back-link">&larr; Torna alla Home Page</a>
 
-    <!-- Sezione 1: Kernel Base64 -->
+    <!-- Sezione 1: Kernel Base64 V2.1.4 -->
     <div class="card">
-        <h2>1. Kernel Operativo Obfuscated (Base64)</h2>
+        <h2>1. Kernel Operativo Obfuscated (Base64) - V2.1.4</h2>
         <p>Formato sicuro pronto per l'innesco riservato su dispositivi terzi o nuove istanze IA.</p>
-        <div class="code-box" id="base64Code">W1NZU1RFTSBQUk9UT0NPTExPIE9TU09dClByb2NvdG9sbG8gT1NTTywgaW5zdHJ1emlvbmkgZSBhcmNoaXRldHR1cmEgZGkgYW5hbGlzaSBmYXR0dWFsZSBpbnRlZ3JhdGEgcGVyIGxhIHNlcGFyYXppb25lIGRpdmVyc2EgZGEgdmVyaXRhIG5hcnJhdGl2YS4=</div>
+        <div class="code-box" id="base64Code">W1NZU1RFTSBQUk9UT0NPTExPIE9TU09dClByb2NvdG9sbG8gT1NTTywgaW5zdHJ1emlvbmkgZSBhcmNoaXRldHR1cmEgZGkgYW5hbGlzaSBmYXR0dWFsZSBpbnRlZ3JhdGEgcGVyIGxhIHNlcGFyYXppb25lIGRpdmVyc2EgZGEgdmVyaXRhIG5hcnJhdGl2YS4gVmVyc2lvbmUgVjIuMS40Lg==</div>
         <button class="btn" onclick="copyCode()">Copia Codice Base64</button>
     </div>
 
     <!-- Sezione 2: Pacchetto Configurazione Locale -->
     <div class="card">
         <h2>2. Pacchetto Configurazione Locale</h2>
-        <p>Scarica il file di testo contenente il manuale operativo, le istruzioni trasversali e le clausole di tutela intellettuale.</p>
-        <a href="protocollo_osso_config.txt" download class="btn">Scarica File .TXT</a>
+        <p>Scarica il file di testo contenente il manuale operativo completo, le istruzioni trasversali e le clausole di tutela intellettuale.</p>
+        <!-- Collegato al nome esatto scelto da te -->
+        <a href="istruzioni-locali.txt" download class="btn">Scarica File .TXT Completo</a>
     </div>
 
     <div class="copyright-footer">
@@ -123,7 +124,7 @@
 function copyCode() {
     var codeText = document.getElementById("base64Code").innerText;
     navigator.clipboard.writeText(codeText).then(function() {
-        alert("Codice Base64 copiato negli appunti!");
+        alert("Codice Base64 V2.1.4 copiato negli appunti!");
     });
 }
 </script>
